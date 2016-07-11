@@ -33,6 +33,14 @@ var addItem = function(item){
 var removeItem = function(index){
     store.listItem.splice(index, 1);
 };
+var updateItem = function(item){
+    for(i = 0; i < store.listItem.length; i++){
+        if(item.id == store.listItem[i].id){
+            store.listItem.splice(i, 1, item);
+            return;
+        }
+    }
+};
 var addToCart = function(item){
     var itemCart = {
         "id": item.id,
@@ -101,6 +109,10 @@ AppDispatcher.register(function(payload){
             break;
         case appConstants.REMOVE_FROM_CART:
             removeFromCart(action.data);
+            Store.emit(CHANGE_EVENT);
+            break;
+        case appConstants.UPDATE_ITEM:
+            updateItem(action.data);
             Store.emit(CHANGE_EVENT);
             break;
         default:

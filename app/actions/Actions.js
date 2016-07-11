@@ -20,6 +20,12 @@ var Actions = {
             data: item
         });
     },
+    updateItem: function(item){
+        AppDispatcher.handleAction({
+            actionType: appConstants.UPDATE_ITEM,
+            data: item
+        })
+    },
     removeFromCart: function(index){
         AppDispatcher.handleAction({
             actionType: appConstants.REMOVE_FROM_CART,
