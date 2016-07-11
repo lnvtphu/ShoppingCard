@@ -1,0 +1,29 @@
+{
+  "name": "shopcart",
+  "version": "1.0.0",
+  "description": "hok co j het",
+  "main": "App.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lnvtphu/ShopCart.git"
+  },
+  "author": "phu.le",
+  "scripts": {
+    "start": "npm run build && node server.js",
+    "startx": "npm run build && npm run dev-server",
+    "build": "./node_modules/.bin/webpack",
+    "dev-server": "node_modules/.bin/http-server -p 3002 public/"
+  },
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.12.1",
+    "react-router": "^2.5.2",
+    "tv4": "^1.2.7"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "express": "^4.14.0",
+    "webpack": "^1.5.3",
+    "http-server": "^0.8.0"
+  }
+}

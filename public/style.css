@@ -1,0 +1,112 @@
+.uList{
+    padding-left: 0;
+    list-style: none;
+  }
+.listGroup{
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.removeItem{
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+.addItem{
+    font-size: 20px;
+    cursor: pointer;
+    color: blue;
+    margin-left: 10px;
+}
+.editItem{
+    font-size: 20px;
+    cursor: pointer;
+    color: green;
+    margin-right: 30px;
+}
+.listItem: {
+    margin-left: 5px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+.main{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 970px;
+}
+.rowAddItem{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control{
+    width: 66% !important;
+}
+.cartLeft{
+    border-radius: 4px;
+    background-color: #AB47BC;
+}
+.cartRight{
+    border-radius: 4px;
+    background-color: #FF4081;
+}
+.nav-tabs{
+    border-radius: 4px;
+    background-color: #64DD17;
+    font-size: 20px
+}
+.nav-tabs>li>a {
+    border-radius: 0px !important;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.title{
+    text-align: center;
+    color: white;
+}
+.addBook{
+    border-radius: 4px;
+    background-color: #0091EA;
+}
+.button{
+    border-width: 0px !important;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    height: 35px
+}
+.detailBook{
+    max-height: 80px;
+}
+.imageBook{
+    margin-left: -10px;
+    width: 100px;
+    height: 100px;
+}
+.imageBookInCart{
+    margin-left: -8px;
+    width: 60px;
+    height: 60px;
+}
+.nameBookInCart{
+    font-size: 18px;
+}
+.fontSizeCart{
+    font-size: 12px;
+}
+.nameBook{
+    font-size: 25px;
+}
+.costBookInCart{
+    margin-top: 20px;
+}
+.text-center{
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.obao{
+    text-align: center;
+    font-size: 77px;
+}
