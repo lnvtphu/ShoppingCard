@@ -17,6 +17,7 @@
   "dependencies": {
     "flux": "^2.0.1",
     "react": "^0.12.1",
+    "react-link-state": "^0.1.2",
     "react-router": "^2.5.2",
     "tv4": "^1.2.7"
   },

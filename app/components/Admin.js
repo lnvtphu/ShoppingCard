@@ -7,6 +7,7 @@ var Actions = require('../actions/Actions');
 var ListContainer = React.createClass({
   getInitialState: function(){
       return {
+          sendItem: {},
           list: Store.getList()
       }
   },
@@ -45,8 +46,8 @@ var ListContainer = React.createClass({
       <div className="col-sm-8 col-md-8 col-md-offset-2 col-sm-offset-2">
         <div className="col-sm-12 addBook">
           <h2 className = "title">Add Book</h2>
-          <AddItem addItem={this.handleAddItem} />
-          <List items={this.state.list} removeItem={this.handleRemoveItem}  setActiveItem={this.setSendItem}/>
+          <AddItem addItem={this.handleAddItem}/>
+          <List items={this.state.list} removeItem={this.handleRemoveItem}  setSendItem={this.setSendItem}/>
         </div>
       </div>
     )

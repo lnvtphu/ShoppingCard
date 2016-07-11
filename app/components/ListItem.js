@@ -1,9 +1,6 @@
 var React = require('react');
 
 var ListItem = React.createClass({
-    handlePhu: function(item){
-        this.props.setSendItem(item);
-    },
     render: function(){
         var listItems = this.props.items.map(function(item, index){
             return (
@@ -23,7 +20,7 @@ var ListItem = React.createClass({
                                 Cost: {item.cost} USD
                             </span>
                             <div className = "col-sm-6 col-md-6 text-center">
-                                <span className="glyphicon glyphicon-edit editItem" title = "Edit Book" onClick={this.handlePhu.bind(null, item)}>
+                                <span className="glyphicon glyphicon-edit editItem" title = "Edit Book" onClick={this.props.setSendItem.bind(null, item)}>
                                 </span>
                                 <span className="glyphicon glyphicon-remove removeItem" title = "Remove Book" onClick={this.props.removeItem.bind(null, index)}>
                                 </span>
