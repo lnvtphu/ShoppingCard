@@ -33,7 +33,7 @@ var Cart = React.createClass({
                         <span className="glyphicon glyphicon-remove removeItem" onClick={this.props.removeFromCart.bind(null,index)}></span>
                     </div>
                     <div>
-                        <Link to={`/detail${item.id}`}><span className="glyphicon glyphicon-align-justify detailItem"></span></Link>
+                        <Link to={`/detail/${item.id}`}><span className="glyphicon glyphicon-align-justify detailItem"></span></Link>
                     </div>
                     <div className="clear"></div>
                 </li>

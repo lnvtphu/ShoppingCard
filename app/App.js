@@ -35,7 +35,7 @@ React.render(
             <IndexRoute component={CartContainer} />
             <Route path="admin" component={Admin} />
             <Route path="about" component={About} />
-            <Route path="detail:id" component={Detail} />
+            <Route path="detail/:id" component={Detail} />
         </Route>
     </Router>
   ,document.getElementById('app')
