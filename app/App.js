@@ -1,12 +1,14 @@
 var React = require('react');
 var Admin = require('./components/Admin');
-var About= require('./components/About');
+var About = require('./components/About');
+var Detail = require('./components/Detail');
 var CartContainer = require('./components/CartContainer');
 var Link = require('react-router').Link;
 var Router = require('react-router').Router;
 var Route = require('react-router').Route;
 var browserHistory = require('react-router').browserHistory;
 var IndexRoute = require('react-router').IndexRoute;
+var hashHistory = require('react-router').hashHistory;
 
 var App = React.createClass({
     render: function(){
@@ -33,6 +35,7 @@ React.render(
             <IndexRoute component={CartContainer} />
             <Route path="admin" component={Admin} />
             <Route path="about" component={About} />
+            <Route path="detail:id" component={Detail} />
         </Route>
     </Router>
   ,document.getElementById('app')

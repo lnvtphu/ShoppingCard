@@ -9,13 +9,13 @@ var ListItem = React.createClass({
                         <img src = {item.image} className = "imageBook"/>
                     </div>
                     <div className = "col-sm-8 col-md-8">
-                        <div>
+                        <div className="row">
                             <span className = "nameBook">{item.name}</span>
                         </div>
-                        <div  className = "detailBook">
+                        <div  className = "row contentBook">
                             <span>{item.content.substring(0,200)}...</span>
                         </div>
-                        <div className = "row">
+                        <div className = "row costBookInCart">
                             <span className = "col-sm-6 col-md-6 text-center">
                                 Cost: {item.cost} USD
                             </span>
@@ -32,7 +32,6 @@ var ListItem = React.createClass({
     }.bind(this));
     return (
         <div>
-            <h3 className = "title">List Book</h3>
             <ul className="uList">
                 {listItems}
             </ul>

@@ -5,24 +5,27 @@
 .listGroup{
     margin: 5px 0;
     border-radius: 5px;
+}
+.listItemInCart{
     cursor: pointer;
 }
 .removeItem{
-    font-size: 20px;
-    cursor: pointer;
     color: red;
 }
-.addItem{
+.removeItem, .addItem, .editItem, .detailItem{
     font-size: 20px;
     cursor: pointer;
+}
+.addItem{
     color: blue;
     margin-left: 10px;
 }
 .editItem{
-    font-size: 20px;
-    cursor: pointer;
     color: green;
     margin-right: 30px;
+}
+.detailItem{
+    color: #33691E;
 }
 .listItem: {
     margin-left: 5px;
@@ -33,6 +36,7 @@
     margin: 0 auto;
     margin-top: 20px;
     width: 970px;
+
 }
 .rowAddItem{
     display: inline-block;
@@ -51,7 +55,7 @@
 }
 .nav-tabs{
     border-radius: 4px;
-    background-color: #64DD17;
+    background-color: #00897B;
     font-size: 20px
 }
 .nav-tabs>li>a {
@@ -75,8 +79,8 @@
     margin-bottom: 5px;
     height: 35px
 }
-.detailBook{
-    max-height: 80px;
+.contentBook{
+    max-height: 100px;
 }
 .imageBook{
     margin-left: -10px;
@@ -109,4 +113,40 @@
 .obao{
     text-align: center;
     font-size: 77px;
+}
+.listBook{
+    background-color: #E040FB;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.nav>li>a {
+    color: white !important;
+}
+body{
+    background-color: #FFF9C4;
+}
+.detailBook{
+    background-color: #FF6D00;
+    border-radius: 4px;
+}
+.imageBookDetail{
+    margin-left: -10px;
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.costBookDetail{
+    font-style: oblique;
+}
+.detailRight{
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+.contentDetail, .contentBook{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.contentDetail, .contentBook{
+    text-indent: 20px;
 }

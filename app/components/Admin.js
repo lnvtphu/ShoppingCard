@@ -81,41 +81,46 @@ var Admin = React.createClass({
     render: function(){
         return (
             <div className="col-sm-8 col-md-8 col-md-offset-2 col-sm-offset-2">
-                <div className="col-sm-12 addBook">
-                    <h2 className = "title">Add Book</h2>
+                <div className="row">
+                    <div className="col-sm-12 addBook">
+                        <h2 className = "title">Add Book</h2>
 
-                    <div className = "row col-sm-12 col-md-12 rowAddItem">
-                        <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">ID:</label>
-                         <input type="text" ref="idItem" className="form-control col-sm-8 col-md-8" placeholder="ID of item"
-                         disabled={this.state.update}
-                         valueLink={LinkState(this, 'id')}
-                         />
-                    </div>
-                    <div className = "row col-sm-12 col-md-12 rowAddItem">
-                        <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Name:</label>
-                        <input type="text" ref="nameItem" className="form-control col-sm-8 col-md-8" placeholder="Name of item"
-                        valueLink={LinkState(this, 'name')}
-                        />
-                    </div>
-                    <div className = "row col-sm-12 col-md-12 rowAddItem">
-                        <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Content</label>
-                        <textarea rows="7" type="text" ref="contentItem" className="form-control col-sm-8 col-md-8" placeholder="Content of item"
-                        valueLink={LinkState(this, 'content')}
-                        />
-                    </div>
-                    <div className = "row col-sm-12 col-md-12 rowAddItem">
-                        <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Pice:</label>
-                        <input type="text" ref="costItem" className="form-control col-sm-8 col-md-8" placeholder="Cost of item"
-                        valueLink={LinkState(this, 'cost')}
-                        />
-                    </div>
-                    <div className = "row col-sm-12 col-md-12 rowAddItem">
-                        <div className = "col-sm-8 col-md-8 col-md-offset-3 col-sm-offset-3">
-                            <button className="button col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4 submit" onClick={this.handleSubmit}>{this.state.titleButton}</button>
+                        <div className = "row col-sm-12 col-md-12 rowAddItem">
+                            <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">ID:</label>
+                             <input type="text" ref="idItem" className="form-control col-sm-8 col-md-8" placeholder="ID of item"
+                             disabled={this.state.update}
+                             valueLink={LinkState(this, 'id')}
+                             />
+                        </div>
+                        <div className = "row col-sm-12 col-md-12 rowAddItem">
+                            <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Name:</label>
+                            <input type="text" ref="nameItem" className="form-control col-sm-8 col-md-8" placeholder="Name of item"
+                            valueLink={LinkState(this, 'name')}
+                            />
+                        </div>
+                        <div className = "row col-sm-12 col-md-12 rowAddItem">
+                            <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Content</label>
+                            <textarea rows="7" type="text" ref="contentItem" className="form-control col-sm-8 col-md-8" placeholder="Content of item"
+                            valueLink={LinkState(this, 'content')}
+                            />
+                        </div>
+                        <div className = "row col-sm-12 col-md-12 rowAddItem">
+                            <label className = "col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">Pice:</label>
+                            <input type="text" ref="costItem" className="form-control col-sm-8 col-md-8" placeholder="Cost of item"
+                            valueLink={LinkState(this, 'cost')}
+                            />
+                        </div>
+                        <div className = "row col-sm-12 col-md-12 rowAddItem">
+                            <div className = "col-sm-8 col-md-8 col-md-offset-3 col-sm-offset-3">
+                                <button className="button col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4 submit" onClick={this.handleSubmit}>{this.state.titleButton}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <List items={this.state.list} removeItem={this.handleRemoveItem}  setSendItem={this.setSendItem}/>
+                <div className="row">
+                    <div className ="listBook">
+                        <List items={this.state.list} removeItem={this.handleRemoveItem}  setSendItem={this.setSendItem}/>
+                    </div>
                 </div>
             </div>
         )

@@ -8,7 +8,8 @@ var CartContainer = React.createClass({
     getInitialState: function(){
         return {
             list: Store.getList(),
-            cart: Store.getCart()
+            cart: Store.getCart(),
+            totalMoney: Store.getTotalMoney()
         }
     },
     componentDidMount: function(){

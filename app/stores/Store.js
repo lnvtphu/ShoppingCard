@@ -16,8 +16,8 @@ var store = {
         },
         {
             "id": "02",
-            "name": "Incognito Chrome",
-            "content": "Pages you view in incognito tabs won’t stick around in your browser’s history, cookie store, or search history after you’ve closed all of your incognito tabs. Any files you download or bookmarks you create will be kept.However, you aren’t invisible. Going incognito doesn’t hide your browsing from your employer, your internet service provider, or the websites you visit.",
+            "name": "Why We Love",
+            "content": "In Why We Love, renowned anthropologist Helen Fisher offers a new map of the phenomenon of love—from its origins in the brain to the thrilling havoc it creates in our bodies and behavior. Working with a team of scientists to scan the brains of people who had just fallen madly in love, Fisher proved what psychologists had until recently only suspected: when you fall in love, specific areas of the brain \"light up\" with increased blood flow. This sweeping new book uses this data to argue that romantic passion is hardwired into our brains by millions of years of evolution. It is not an emotion; it is a drive as powerful as hunger.",
             "cost": 1000,
             "image": "http://teacherlearningsessions.com/wp-content/uploads/2016/02/BOOKLOVELOGOv2020416.png"
         }

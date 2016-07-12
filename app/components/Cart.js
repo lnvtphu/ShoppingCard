@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 
 var Cart = React.createClass({
     render: function(){
@@ -30,6 +31,9 @@ var Cart = React.createClass({
                     </div>
                     <div>
                         <span className="glyphicon glyphicon-remove removeItem" onClick={this.props.removeFromCart.bind(null,index)}></span>
+                    </div>
+                    <div>
+                        <Link to={`/detail${item.id}`}><span className="glyphicon glyphicon-align-justify detailItem"></span></Link>
                     </div>
                     <div className="clear"></div>
                 </li>
